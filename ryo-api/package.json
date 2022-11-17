@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ryo.js": "^1.0.4"
+    "ryo.js": "^0.0.6"
   },
   "devDependencies": {
     "@luncheon/esbuild-plugin-gzip": "^0.1.0",
