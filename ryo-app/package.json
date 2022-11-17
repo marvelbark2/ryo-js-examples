@@ -1,0 +1,21 @@
+{
+  "name": "ryo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ryo build",
+    "start": "ryo start",
+    "test": "exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ryo-js": "file:../preact-ssr"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-preset-preact": "^2.0.0"
+  }
+}

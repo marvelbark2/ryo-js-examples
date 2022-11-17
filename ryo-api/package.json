@@ -1,0 +1,20 @@
+{
+  "name": "ryo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ryo build",
+    "start": "ryo start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ryo.js": "^1.0.3"
+  },
+  "devDependencies": {
+    "@luncheon/esbuild-plugin-gzip": "^0.1.0",
+    "babel-preset-preact": "^2.0.0"
+  }
+}
