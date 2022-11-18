@@ -12,10 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ryo.js": "^0.0.6"
-  },
-  "devDependencies": {
-    "@luncheon/esbuild-plugin-gzip": "^0.1.0",
-    "babel-preset-preact": "^2.0.0"
-  }
+    "@babel/preset-env": "^7.20.2",
+    "babel-preset-preact": "^2.0.0",
+    "ryo": "0.0.1",
+    "preact": "^10.11.3" 
+   }
 }
