@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "ryo build",
+    "prebuild": "postcss ./src/tailwind.css -o public/styles.css",
     "start": "ryo start",
     "test": "exit 0"
   },
@@ -12,9 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/preset-env": "^7.20.2",
+    "ryo.js": "^0.0.0-meme.2"
+  },
+  "devDependencies": {
+    "@luncheon/esbuild-plugin-gzip": "^0.1.0",
+    "autoprefixer": "^10.4.13",
     "babel-preset-preact": "^2.0.0",
-    "ryo": "0.0.1",
-    "preact": "^10.11.3" 
-   }
+    "tailwindcss": "^3.2.4"
+  }
 }

@@ -9,12 +9,25 @@ export const data = {
         return count++;
     }
 }
+const Alert = ({ count }: { count: number }) => {
+    return (
+        <div
+            className="text-white px-6 py-4 border-0 rounded relative mb-4 bg-rose-500"
+        >
+            <span className="inline-block align-middle mr-8">
+                {
+                    count > 0 ? (
+                        <span><b className="capitalize">{count}!</b> This count loaded from ws.</span>
+                    ) : (
+                        <span><b className="capitalize">Loading...</b></span>
+                    )
+                }
+            </span>
+        </div>
+    );
+};
 export default function index({ data }: { data: number }) {
     return (
-        <div>
-            <p>
-                COUNTING... {data}
-            </p>
-        </div>
+        <Alert count={data} />
     )
 }
