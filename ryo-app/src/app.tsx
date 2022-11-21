@@ -1,8 +1,12 @@
 import { useState } from 'preact/hooks';
 // @ts-ignore
+
 import { theCity } from '../lib/city';
-const city = theCity();
-export default function App() {
+export function data() {
+    const city = theCity();
+    return city
+}
+export default function App({ data: city }: { data: { name: string } }) {
     const [count, setCount] = useState(0);
     return (
         <div>

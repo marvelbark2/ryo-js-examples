@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'preact/hooks';
+
 let count = 0;
 export const data = {
     invalidate: 1,
@@ -8,6 +10,18 @@ export const data = {
         }
         return count++;
     }
+}
+export function Parent({ children }: any) {
+    const [count, setCount] = useState(0);
+    useEffect(() => {
+        console.log('Parent Mounted');
+    }, [])
+    return (
+        <div>
+            <h1 onClick={() => setCount(c => c + 1)}>Parent: {count}</h1>
+            {children}
+        </div>
+    )
 }
 const Alert = ({ count }: { count: number }) => {
     return (

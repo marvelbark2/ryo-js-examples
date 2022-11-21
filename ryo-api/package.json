@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ryo.js": "^0.0.0-meme.2"
+    "ryo.js": "^0.0.0-meme.10"
   },
   "devDependencies": {
     "@luncheon/esbuild-plugin-gzip": "^0.1.0",
